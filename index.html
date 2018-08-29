@@ -1,0 +1,27 @@
+---
+title: Product Management Consulting 
+layout: default
+description: Learn how to build great products. 
+homepage: true
+---
+
+{% for post in site.posts limit:5 %}
+    <div class="sheet blog_post">
+        <div class="post-item clearfix">
+            
+            {% include post_header.html %}
+            
+            {{ post.content }}
+
+            {% include post_footer.html %}
+            
+            {% if post.suggested_tweet %}
+                <p><a class="suggested_tweet" href="{% suggested_tweet %}"><i class="icon-twitter"></i> Tweet this article</a></p>
+            {% endif %}
+            
+            <p><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}"></a></p>
+        </div>
+    </div>
+{% endfor %}
+
+{% include signup_form.html %}

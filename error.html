@@ -1,0 +1,28 @@
+---
+title: Product Management Consulting
+layout: default
+description: Databox is a digital agency that helps businesses track and analyze their data to make smart decisions.
+---
+<h1>Uh-oh.</h1>
+<h4>I don't think this is what you're looking for.</h4>
+<p>Check out our <a href="/">homepage</a> or here's a few recent posts from <a href="/blog">our blog</a>.
+
+<div id="posts">
+    {% for post in site.posts limit:3 %}
+    <div class="post-item clearfix">
+      <h3>{{ post.title }}</h3>
+      <div class="postdate">
+        <p>Posted on {{ post.date | date_to_string }}
+        {% if post.last_updated %}, last updated on {{ post.last_updated | date_to_string }}{% endif %}
+        </p>
+      </div>
+
+    {% if post.excerpt %}
+        {{ post.excerpt | markdownify }}
+        <a href="{{ post.url }}" class="pull-right nav-pill">Continue Reading >></a>
+    {% else %}
+        {{ post.content }}
+    {% endif %}
+    </div>
+    {% endfor %}
+</div>

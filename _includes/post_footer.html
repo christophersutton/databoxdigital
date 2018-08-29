@@ -1,0 +1,19 @@
+{% if page != index %}
+  {% assign post = page %}
+{% endif %}
+
+  <div class="post-footer">
+    
+
+
+    {% if post.image.credit %}
+      <p>Photo courtesy of <a href="{{ post.image.source }}">{{ post.image.credit }}</a></p>
+    {% endif %}
+  
+    <i class="icon-tags"></i> 
+    <ul>
+      {% for tag in post.tags %}
+        <li><a href="/tags/{{tag}}">{{tag}}</a></li>
+      {% endfor %}
+    </ul>
+  </div>

@@ -1,0 +1,30 @@
+---
+layout: default
+description: A description about my blog homepage
+---
+
+<div id="posts" class="sheet">
+
+<h3>All Posts</h3>
+    {% for post in paginator.posts limit:20 %}
+    <ul class="posts_archive">
+    <li><a href="{{ post.url }}">{{ post.title }}</a>
+    <span class="date">{{ post.date | date: '%B %d, %Y' }}</span></li>
+    </ul>
+    {% endfor %}
+</div>
+
+<div class="pagination clearfix">
+  {% if paginator.next_page %}
+    <a href="/blog/page{{ paginator.next_page }}" class="pull-left nav-pill"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;Previous Posts</a>
+  {% endif %}
+  {% if paginator.previous_page %}
+    {% if paginator.previous_page == 1 %}
+      <a href="/blog" class="pull-right nav-pill">Next Posts&nbsp;&nbsp;&nbsp;<i class="icon-chevron-right"></i></a>
+    {% else %}
+      <a href="/blog/page{{ paginator.previous_page }}" class="pull-right nav-pill">Next Posts&nbsp;&nbsp;&nbsp;<i class="icon-chevron-right"></i></a>
+    {% endif %}
+  {% endif %}
+</div>
+
+{% include signup_form.html %}

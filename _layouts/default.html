@@ -1,0 +1,86 @@
+---
+navigation:
+- text: About
+  url: /about/
+- text: Services
+  url: /services/
+- text: Contact
+  url: /contact/
+- text: Archives
+  url: /blog/
+
+---
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.title }}</title>
+    
+    <meta name="description" {% if page.description %} content="{{ page.description }}" {% else %} content="{{ site.description }}" {% endif %} />
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" media="screen" href="/stylesheets/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/stylesheets/font-awesome.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/stylesheets/application.css" type="text/css" />
+    <link rel="stylesheet" media="screen" href="/stylesheets/bigfoot-default.css" type="text/css" />
+    <link href="//cdn-images.mailchimp.com/embedcode/slim-081711.css" rel="stylesheet" type="text/css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+    {% if site.feedburner %}
+    <link href="http://feeds.feedburner.com/{{ site.feedburner.id }}" rel="alternate" title="{{ site.title }}" type="application/atom+xml" />
+    {% endif %}
+    {% if site.google_analytics %}
+    <!-- google analytics async -->
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', '{{ site.google_analytics.account }}']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+    {% endif %}
+    <script type="text/javascript" src="//use.typekit.net/ldj0yva.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script type="text/javascript" src="/js/bigfoot.min.js"></script>
+    <script type="text/javascript" src="/js/nav.js"></script>
+    <script type="text/javascript">
+      $.bigfoot();
+    </script>
+  </head>
+  <body>
+    <div id="header" class="clearfix">
+      <div class="container-fluid container">
+        <a href="/"><img src="/images/databox-logo-900.png" class="pull-left" =></a>
+        <ul class="nav nav-pills pull-right">
+          {% for link in page.navigation %}
+            <li {% if page.url == link.url %}class="active" {% endif %}>
+              <a href="{{link.url}}" title="{{link.title}}">{{link.text}}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="container-fluid container">
+      <div id="content">
+        {{ content }}
+        <p class="footer">© 2014 Databox Digital, LLC. All rights reserved.</p>
+      </div>
+    </div>
+    <script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+    var disqus_shortname = 'databox'; // required: replace example with your forum shortname
+
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function () {
+        var s = document.createElement('script'); s.async = true;
+        s.type = 'text/javascript';
+        s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+        (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+    }());
+    </script>
+   </body>
+</html>
