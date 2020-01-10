@@ -1,25 +1,23 @@
 ---
-title: Product Management Consulting 
+title: Product Management Consulting
 layout: default
-description: Learn how to build great products. 
+description: Learn how to build great products.
 homepage: true
+excerpt_separator: '<!--end_excerpt-->'
 ---
 
 {% for post in site.posts limit:5 %}
     <div class="sheet blog_post">
         <div class="post-item clearfix">
-            
+
             {% include post_header.html %}
-            
-            {{ post.content }}
+
+            {{ post.excerpt }}
 
             {% include post_footer.html %}
-            
-            {% if post.suggested_tweet %}
-                <p><a class="suggested_tweet" href="{% suggested_tweet %}"><i class="icon-twitter"></i> Tweet this article</a></p>
-            {% endif %}
-            
-            <p><a href="{{ post.url }}#disqus_thread" data-disqus-identifier="{{post.url}}"></a></p>
+
+<a href="{{post.url}}" class="pull-right nav-pill">&nbsp;Continue Reading&nbsp;&nbsp;&nbsp;<i class="icon-chevron-right"></i>&nbsp;</a>
+
         </div>
     </div>
 {% endfor %}

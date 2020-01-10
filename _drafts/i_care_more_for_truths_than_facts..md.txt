@@ -1,0 +1,5 @@
+--- layout: post
+title: "I care more for truths than facts."
+description:
+tags: 
+--- “I care more for truths than facts.”

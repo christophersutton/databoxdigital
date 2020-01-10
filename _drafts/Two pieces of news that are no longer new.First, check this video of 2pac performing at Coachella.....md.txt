@@ -1,0 +1,13 @@
+--- layout: post
+title: Two pieces of news that are no longer new.
+
+First, check this video of 2pac performing at Coachella....
+description:
+tags: tech, porn, 2pac, hologram
+--- <p>Two pieces of news that are no longer new.</p>
+
+<p>First, check this video of <a href="http://www.youtube.com/watch?v=FvTVlMlCX58" target="_blank">2pac performing at Coachella</a>. He&rsquo;s long been dead but is now almost live — it&rsquo;s creepy and incredible to think about the future of what it means to be human. </p>
+
+<p>Then there was some great reporting from <a href="http://www.extremetech.com/computing/123929-just-how-big-are-porn-sites" target="_blank">Extreme Tech</a> on just how large the online porn industry is. The massive amount of fleshy video sent over the wires is almost unfathomable. </p>
+
+<p>Now if you connecting the dots, it should be easy to see where these technologies converge. If you&rsquo;re skeptical, I don&rsquo;t think you&rsquo;re in tune with some basic facts about human nature.</p>

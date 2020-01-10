@@ -3,20 +3,15 @@ layout: default
 ---
 
 <div class="sheet">
-  
+
   {% include post_header.html %}
 
   <div class="post">
     {{ content }}
   </div>
-  
+
   {% include post_footer.html %}
 
-  <div class="share">
-    {% if page.suggested_tweet %}
-      <a class="suggested_tweet" href="{% suggested_tweet %}"><i class="icon-twitter"></i> Tweet this article</a>
-    {% endif %}
-  </div>
   <div class="pagination clearfix">
     {% if page.previous %}
       <a href="{{ page.previous.url }}" class="pull-left nav-pill"><i class="icon-chevron-left"></i>&nbsp;&nbsp;&nbsp;{{ page.previous.title }}</a>
@@ -25,21 +20,6 @@ layout: default
       <a href="{{ page.next.url }}" class="pull-right nav-pill">{{ page.next.title }}&nbsp;&nbsp;&nbsp;<i class=" icon-chevron-right"></i></a>
     {% endif %}
   </div>
-</div>
-
-<div id="comments" class="sheet clear">    
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_identifier = "{{ page.url }}";
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq. async = true;
-      dsq.src = 'http://{{ site.disqus.id }}.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body') [0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>
-    Please enable JavaScript to view the <a href="http://disqus.  com/?ref_noscript={{ site.disqus.id }}">comments powered by Disqus.</a>
-  </noscript>
 </div>
 
 {% include signup_form.html %}

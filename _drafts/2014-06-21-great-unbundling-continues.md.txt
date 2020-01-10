@@ -1,0 +1,9 @@
+---
+layout: post
+title: The Unbundling Continues
+description: We've seen companies begin to unbundle their services into seperate apps. The next 18 months we'll start to see apps unbundling into OS features.
+tags: [psychology,UX]
+---
+
+
+<div class="storify"><iframe src="//storify.com/sutterbomb/pmarca-s-unbundling-tweetstorm/embed?header=false&border=false" width="100%" height=750 frameborder=no allowtransparency=true></iframe><script src="//storify.com/sutterbomb/pmarca-s-unbundling-tweetstorm.js?header=false&border=false"></script><noscript>[<a href="//storify.com/sutterbomb/pmarca-s-unbundling-tweetstorm" target="_blank">View the story "@pmarca's Unbundling Tweetstorm" on Storify</a>]</noscript></div>

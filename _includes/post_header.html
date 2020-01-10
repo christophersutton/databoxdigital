@@ -10,14 +10,6 @@
   </h1>
 {% endif %}
 
-{% if post.date %}
-  <div class="postdate">
-    <p>By Chris Sutton on {{ post.date | date: '%B %d, %Y' }}
-      {% if post.last_updated %}, last updated on {{ post.last_updated |  date_to_string }}{% endif %} 
-    </p>
-  </div>
-{% endif %}
-
 {% if post.image %}
   {% if post.image.source %}<a href="{{ post.image.source }}">{% endif %}
   <img class="hero-image" src="{{ post.image.path }}" alt="{{ post.image.alt }}">

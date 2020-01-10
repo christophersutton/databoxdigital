@@ -1,0 +1,17 @@
+--- layout: post
+title: Big debate this week about whether you should or should not learn to code. I&rsquo;m not going to...
+description:
+tags: tech, code, career, learning
+--- <p>Big debate this week about whether you <a href="http://sachagreif.com/please-learn-to-code/" target="_blank">should</a> or <a href="http://www.codinghorror.com/blog/2012/05/please-dont-learn-to-code.html" target="_blank">should not</a> learn to code. I&rsquo;m not going to really weigh in on the topic, but I do have a decent story about how coding changed my life.</p>
+
+<p>Although I grew up making angelfire pages with photos lifted from <a href="http://www.nba.com" target="_blank">nba.com</a>, I otherwise had very little programming experience. I went to college for film and television, and printed t-shirts in a friend&rsquo;s basement for some extra spending money. Nothing even close to coding. </p>
+
+<p>When I graduated and starting looking for work, I struggled. Film and television are hard to get into, and I wasn&rsquo;t willing to move to LA without a job prospect. That left me with t-shirts. So I found a job at <a href="http://www.customink.com" target="_blank">CustomInk</a>, doing grunt work in the production art department. We&rsquo;d process 40-50 orders a day, doing very similar and repetitive tasks for each order.  </p>
+
+<p>Can you see where this is going? I automated some of that grunt work with Illustrator macros. We already used a handful of them, so I became curious about how they worked. Then I realized how simple they were, and how many other things could be automated.  And then - this part is key :) - I automated them. All in all, my changes only increased productivity ~5%. We were already fairly well optimized at that point, so I was shaving seconds not minutes. </p>
+
+<p>But boy was it empowering. So I dove into another scripting language, <a href="http://www.autohotkey.com/" target="_blank">AutoHotkey</a>, and created a custom toolbar to help navigate our backend systems. Even more empowering. And when I felt burnt out in the art department? </p>
+
+<p>Well it turns out there&rsquo;s a market for people who can teach themselves technology (which is really what this debate is all about.) I was able to move around the company, continue learning, and eventually make a career in software as a product manager. And all it took was curiosity and a few macros. </p>
+
+<p>TL;DR: Liberal Arts Degree &gt; Illustrator Scripting &gt; Career in Software</p>
