@@ -71,7 +71,7 @@ GEM
     thread_safe (0.3.6)
     twitter_web_intents (0.0.2)
       activesupport (~> 3.0)
-    tzinfo (1.2.6)
+    tzinfo (1.2.10)
       thread_safe (~> 0.1)
     tzinfo-data (1.2019.3)
       tzinfo (>= 1.0.0)
